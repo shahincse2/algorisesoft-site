@@ -1,0 +1,16 @@
+:root { --bg:#0f172a; --card:#162038; --text:#e2e8f0; --muted:#94a3b8; --accent:#2dd4bf; }
+@media (prefers-color-scheme: light) {
+  :root { --bg:#f8fafc; --card:#ffffff; --text:#0f172a; --muted:#475569; --accent:#0f766e; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); line-height:1.65;
+  font-family:system-ui,-apple-system,"Segoe UI","Noto Sans Bengali","Hind Siliguri",sans-serif; }
+header, main, footer { max-width: 820px; margin: 0 auto; padding: 20px; }
+header { display:flex; align-items:center; gap:12px; }
+header a { color:var(--text); text-decoration:none; font-weight:700; font-size:1.1rem; }
+h1 { font-size:2rem; margin:.4em 0; } h2 { margin-top:1.8em; }
+a { color:var(--accent); }
+.card { background:var(--card); border-radius:14px; padding:18px 20px; margin:16px 0; }
+.muted { color:var(--muted); font-size:.92rem; }
+ul { padding-left: 1.2em; } li { margin:.3em 0; }
+.logo { width:40px; height:40px; border-radius:10px; }

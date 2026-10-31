@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 6 to 11: what Auto Backup copies to the user's own Google Drive.
+     Everything is included (projects, settings) except the secure storage file
+     that will hold Git tokens: its keys cannot be restored on another phone. -->
+<full-backup-content>
+    <exclude domain="sharedpref" path="FlutterSecureStorage.xml"/>
+</full-backup-content>
